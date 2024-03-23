@@ -3,9 +3,12 @@
     <meta charset="UTF-8" content="width=device-width, initial-scale=1">
     <head>
         <title>Tablo Comm Warehouse Report Network</title>
+        <link rel="icon" type="image/x-icon" href="Tablo Logo.jpg">
     </head>
     <body>
       <div class="content">
+        <div style="text-align: center;">
+            <img src="Tablo Logo.jpg" alt="Tablo Logo" height="150" width="150"></div>
       <div style="color: rgb(255, 141, 90); font-style: italic; font-size: 20px;">
           <h1>WAREHOUSE REPORT</h1>
       </div>
@@ -1202,6 +1205,8 @@
         <div style="margin-top: 30px;">
         <label style="color: rgb(255, 141, 90);">NOTES:</label></div>
         <input type="text" name="NOTES" style="width: 400px;">
+        <div style="margin-top: 30px;"></div>
+        <input id="time" name="TIME" style="width: 380px; text-align: center; background-color: rgb(255, 141, 90);"> 
       <div style="margin-top: 30px;"></div>
       <button type="submit" onclick="hideButton(this)" style="background-color: black; color: white;">ADD</button>
       <div style="margin-top: 30px;"></div>
@@ -1240,9 +1245,9 @@ padding: 50px;
     x.style.display = 'none';
    }
 
-  var now = new Date();
-  var datetime = now.toLocaleString();
-
-  document.getElementById("datetime").innerHTML = datetime;
+ 
 </script>
+<script type="text/javascript">
+    document.getElementById('time').value = Date();
+  </script>
 </html>
