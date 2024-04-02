@@ -9,7 +9,7 @@
       <div class="content">
         <div style="text-align: center;">
             <img src="Tablo Logo.jpg" alt="Tablo Logo" height="150" width="150"></div>
-      <div style="color: rgb(255, 141, 90); font-style: italic; font-size: 20px;">
+      <div style="color: white; font-style: italic; font-size: 20px;">
           <h1>WAREHOUSE REPORT</h1>
       </div>
 <form 
@@ -1192,16 +1192,16 @@
         <label for="QUANTITY (OUT)">OUT:</label>
   <input type="number" id="QUANTITY (OUT)" name="QUANTITY (OUT)" step=".01" style="height: auto; width: 50px;">
       <div style="margin-top: 10px"></div>
-      <label for="PREPARED BY" style="color: rgb(255, 141, 90)">RECIEVED/PREPARED BY:</label>
-    <div style="margin-top: 5px; text-align: left; margin-left: 200px;">
-        <input type="checkbox" id="RICHARD BROZ" name="IN CHARGE (1)" value="RICHARD BROZ" class="largerCheckbox">
-        <label for="RICHARD BROZ">-  RICHARD BROZ</label></div>
-    <div style="margin-top: 10px; text-align: left; margin-left: 200px;">
-        <input type="checkbox" id="JOMAR" name="IN CHARGE (2)" value="JOMAR" class="largerCheckbox">
-        <label for="JOMAR">-  JOMAR</label></div>
-    <div style="margin-top: 10px; text-align: left; margin-left: 200px;">
-        <input type="checkbox" id="JESSIE" name="IN CHARGE (3)" value="JESSIE" class="largerCheckbox">
-        <label for="JESSIE">-  JESSIE</label></div>
+      <fieldset style="border-radius: 10px;">
+        <legend style="color: rgb(255, 141, 90);">PREPARED BY:</legend>
+        <div style="column-count: 1; text-align: left; margin-left: 150PX;">
+        <ul>
+            <li><input type="checkbox" name="IN CHARGE (1)" class="largerCheckbox" value="RICHARD BROZ">- RIICHARD BROZ</li>
+            <li><input type="checkbox" name="IN CHARGE (2)" class="largerCheckbox" value="JOMAR" style="margin-top: 20px;">- JOMAR</li>
+            <li><input type="checkbox" name="IN CHARGE (3)" class="largerCheckbox" value="JESSIE" style="margin-top: 20px;">- JESSIE</li>
+        </ul>
+    </div>
+    </fieldset>
         <div style="margin-top: 30px;">
         <label style="color: rgb(255, 141, 90);">NOTES:</label></div>
         <input type="text" name="NOTES" style="width: 400px;">
