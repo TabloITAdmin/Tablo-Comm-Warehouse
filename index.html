@@ -17,7 +17,8 @@
       <img src="Tablo Logo.jpg" alt="Tablo Logo">
       <h1><strong>WAREHOUSE REPORT</strong></h1>
       <label>PRODUCT:</label><br>
-      <select name="PRODUCT NAME" id="products">
+      <input list="products" id="product input" name="PRODUCT NAME" placeholder="Search Here">
+      <datalist name="PRODUCT NAME" id="products">
         <option style="text-align: center;" disabled selected value>--select product here--</option>
         <option value="" class="cat">-BAR BODEGA/ALCOHOLIC BEVERAGES-</option>
         <option value="Absolut Kurant 700ml">Absolut Kurant 700ml</option>
@@ -975,7 +976,7 @@
         <option value="" class="cat">-WAREHOUSE (MEALS)-</option>
         <option value="Mega Sardines 15oz 425g">Mega Sardines 15oz 425g</option>
         <option value="Purefoods Luncheon Meat 350g">Purefoods Luncheon Meat 350g</option>
-      </select><br>
+      </datalist><br>
       <label>QUANTITY:</label><br>
       <input style="width: 50px;" type="number" name="QUANTITY (IN)" step=".001" placeholder="IN">
       <input style="width: 50px;" type="number" name="QUANTITY (OUT)" step=".001" placeholder="OUT">
